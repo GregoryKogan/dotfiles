@@ -40,6 +40,9 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 # alacritty
 mkdir ~/.config/alacritty; ln -s ~/.dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
+# starship
+ln -s ~/.dotfiles/starship.toml ~/.config/starship.toml
+
 # skhd (for MacOS)
 mkdir ~/.config/skhd; ln -s ~/.dotfiles/skhd/skhdrc ~/.config/skhd/skhdrc
 
