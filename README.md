@@ -28,6 +28,9 @@ rm ~/.dotfiles/Brewfile; brew bundle dump --describe --file ~/.dotfiles/Brewfile
 
 ### Create symlinks
 ```shell
+# images
+ln -s ~/.dotfiles/images ~/Pictures
+
 # zsh
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
 
