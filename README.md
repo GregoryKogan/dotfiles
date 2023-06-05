@@ -38,4 +38,6 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 mkdir ~/.config/alacritty; ln -s ~/.dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 # skhd (for MacOS)
 mkdir ~/.config/skhd; ln -s ~/.dotfiles/skhd/skhdrc ~/.config/skhd/skhdrc
+# cups (for MacOS)
+mkdir ~/.config/.cups; ln -s ~/.dotfiles/.cups/lpoptions ~/.config/.cups/lpoptions
 ```
