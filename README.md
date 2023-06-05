@@ -64,3 +64,6 @@ ln -s ~/.dotfiles/qtile ~/.config
 # rofi (for Linux)
 ln -s ~/.dotfiles/rofi ~/.config
 ```
+
+#### Exceptions
+- Telegram Dracula theme is inside `telegram` directory. How to apply it: https://draculatheme.com/telegram
