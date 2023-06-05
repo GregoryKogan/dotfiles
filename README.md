@@ -57,4 +57,7 @@ ln -s ~/.dotfiles/picom ~/.config
 
 # qtile (for Linux)
 ln -s ~/.dotfiles/qtile ~/.config
+
+# rofi (for Linux)
+ln -s ~/.dotfiles/rofi ~/.config
 ```
