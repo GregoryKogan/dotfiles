@@ -1,5 +1,5 @@
 # dotfiles
-My MacOS/Linux configuration files
+My MacOS/ArchLinux configuration files
 
 ## Usgage
 ### Clone inside '~/.dotfiles'
