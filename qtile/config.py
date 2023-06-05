@@ -179,7 +179,7 @@ volume_app = "pavucontrol"
 icon_folder = "~/.config/qtile/icons"
 wlan_interface = "wlp2s0"
 backlight_name = "intel_backlight"
-wallpaper_folder = "~/Pictures/Wallpapers/"
+wallpaper_folder = "~/Pictures/images/Wallpapers/"
 run_launcher = "rofi -show drun"
 screenshot_app = "xfce4-screenshooter"
 
