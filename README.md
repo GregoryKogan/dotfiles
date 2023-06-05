@@ -28,6 +28,10 @@ rm ~/.dotfiles/Brewfile; brew bundle dump --describe --file ~/.dotfiles/Brewfile
 
 ### Create symlinks
 ```shell
+#zsh
+ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
+# nano
 ln -s ~/.dotfiles/.nanorc ~/.nanorc
+# git
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
