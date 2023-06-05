@@ -46,6 +46,9 @@ ln -s ~/.dotfiles/alacritty ~/.config
 # starship
 ln -s ~/.dotfiles/starship.toml ~/.config/starship.toml
 
+# xournalpp
+ln -s ~/.dotfiles/xournalpp ~/.config
+
 # skhd (for MacOS)
 ln -s ~/.dotfiles/skhd ~/.config
 
