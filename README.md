@@ -41,17 +41,20 @@ ln -s ~/.dotfiles/.nanorc ~/.nanorc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
 # alacritty
-mkdir ~/.config/alacritty; ln -s ~/.dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+ln -s ~/.dotfiles/alacritty ~/.config
 
 # starship
 ln -s ~/.dotfiles/starship.toml ~/.config/starship.toml
 
 # skhd (for MacOS)
-mkdir ~/.config/skhd; ln -s ~/.dotfiles/skhd/skhdrc ~/.config/skhd/skhdrc
+ln -s ~/.dotfiles/skhd ~/.config
 
 # cups (for MacOS)
-mkdir ~/.config/.cups; ln -s ~/.dotfiles/.cups/lpoptions ~/.config/.cups/lpoptions
+ln -s ~/.dotfiles/.cups ~/.config
 
 # picom (for Linux)
-mkdir ~/.config/picom; ln -s ~/.dotfiles/picom/picom.conf ~/.config/picom/picom.conf
+ln -s ~/.dotfiles/picom ~/.config
+
+# qtile (for Linux)
+ln -s ~/.dotfiles/qtile ~/.config
 ```
