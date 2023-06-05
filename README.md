@@ -30,14 +30,22 @@ rm ~/.dotfiles/Brewfile; brew bundle dump --describe --file ~/.dotfiles/Brewfile
 ```shell
 # zsh
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
+
 # nano
 ln -s ~/.dotfiles/.nanorc ~/.nanorc
+
 # git
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+
 # alacritty
 mkdir ~/.config/alacritty; ln -s ~/.dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+
 # skhd (for MacOS)
 mkdir ~/.config/skhd; ln -s ~/.dotfiles/skhd/skhdrc ~/.config/skhd/skhdrc
+
 # cups (for MacOS)
 mkdir ~/.config/.cups; ln -s ~/.dotfiles/.cups/lpoptions ~/.config/.cups/lpoptions
+
+# picom (for Linux)
+mkdir ~/.config/picom; ln -s ~/.dotfiles/picom/picom.conf ~/.config/picom/picom.conf
 ```
