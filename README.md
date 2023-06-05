@@ -13,11 +13,11 @@ git clone git@github.com:GregoryKogan/dotfiles.git ~/.dotfiles
 ```
 
 ### Install software
-#### Install [Homebrew](https://brew.sh/)
+#### Install [Homebrew](https://brew.sh/) (for MacOS)
 ```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-#### Install everything else via homebrew
+#### Install everything else via homebrew (for MacOS)
 ```shell
 brew bundle --file ~/.dotfiles/Brewfile
 ```
@@ -36,4 +36,6 @@ ln -s ~/.dotfiles/.nanorc ~/.nanorc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 # alacritty
 mkdir ~/.config/alacritty; ln -s ~/.dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+# skhd (for MacOS)
+mkdir ~/.config/skhd; ln -s ~/.dotfiles/skhd/skhdrc ~/.config/skhd/skhdrc
 ```
