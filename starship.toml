@@ -1,0 +1,38 @@
+# =======================================
+# Starship prompt config file
+# location: ~/.config
+# =======================================
+
+
+format = """$cmd_duration $username $directory $git_branch $python
+$character
+"""
+
+add_newline = false
+
+[character]
+error_symbol = "[❱](bold red)[❱](bold red)[❱](bold red)"
+success_symbol = "[❱](bold red)[❱](bold green)[❱](bold blue)"
+
+[cmd_duration]
+min_time = 5_000
+format = "took [$duration]($style)"
+
+[directory]
+format = "[$path]($style)"
+truncation_length = 5
+truncation_symbol = "../"
+
+[git_branch]
+format = "on [$symbol$branch]($style)"
+symbol = "🌿"
+style = "bold yellow"
+
+[python]
+format = "[$symbol$version]($style)"
+symbol = "🐍"
+style = "bold green"
+
+[username]
+style_user = "bold dimmed blue"
+show_always = false
