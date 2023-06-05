@@ -29,4 +29,5 @@ rm ~/.dotfiles/Brewfile; brew bundle dump --describe --file ~/.dotfiles/Brewfile
 ### Create symlinks
 ```shell
 ln -s ~/.dotfiles/.nanorc ~/.nanorc
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
