@@ -44,6 +44,9 @@ ln -s ~/.dotfiles/images ~/Pictures
 # zsh
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
 
+# nvim
+ln -s ~/.dotfiles/nvim ~/.config
+
 # nano
 ln -s ~/.dotfiles/.nanorc ~/.nanorc
 
