@@ -24,7 +24,7 @@ brew bundle --file ~/.dotfiles/macos_software/Brewfile
 ```
 To overwrite list of software to install with your current homebrew installed programs run
 ```shell
-rm ~/.dotfiles/Brewfile; brew bundle dump --describe --file ~/.dotfiles/macos_software/Brewfile
+rm ~/.dotfiles/macos_software/Brewfile; brew bundle dump --describe --file ~/.dotfiles/macos_software/Brewfile
 ```
 #### Arch
 ##### Give run permission to install script
