@@ -1,6 +1,8 @@
 # dotfiles
 My MacOS/ArchLinux configuration files
 
+![image](https://github.com/GregoryKogan/dotfiles/assets/60318411/70570850-a6e6-41bc-a77e-76a39c1dce3c)
+
 ## Usgage
 ### Clone inside '~/.dotfiles'
 via `HTTPS`:
