@@ -49,6 +49,8 @@ brew "koekeishiya/formulae/skhd"
 cask "alacritty"
 # Automatic tiling window manager similar to xmonad
 cask "amethyst"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
 # Display management tool
 cask "betterdisplay"
 # Terminal emulator mimicking the old cathode display
