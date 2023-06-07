@@ -48,7 +48,7 @@ ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
 
 # nvim
 # install nvchad
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 # link custom configs
 ln -s ~/.dotfiles/nvim/custom ~/.config/nvim/lua
 # install go formatting packages for nvim
