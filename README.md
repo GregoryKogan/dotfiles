@@ -51,6 +51,7 @@ ln -s ~/.dotfiles/nvim ~/.config
 # install go formatting packages for nvim
 go install mvdan.cc/gofumpt@latest
 go install -v github.com/incu6us/goimports-reviser/v3@latest
+go install github.com/segmentio/golines@latest
 
 # nano
 ln -s ~/.dotfiles/.nanorc ~/.nanorc
