@@ -183,7 +183,8 @@ draw_bold_text_with_bright_colors: false
 # Colors (Tokyo-night-storm)
 colors:
   primary:
-    background: '0x24283b'
+    # background: '0x24283b' # (Storm)
+    background: '0x1a1b26' # (Night)
     foreground: '0xa9b1d6'
 
   # Normal colors
