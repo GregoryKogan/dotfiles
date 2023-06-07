@@ -6,6 +6,7 @@ eval "$(thefuck --alias)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
+alias vim='nvim'
 alias nano='/opt/homebrew/bin/nano'
 alias ls='exa -TL=1 --icons'
 alias ls2='exa -TL=2 --icons'
