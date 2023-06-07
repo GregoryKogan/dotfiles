@@ -48,6 +48,9 @@ ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
 
 # nvim
 ln -s ~/.dotfiles/nvim ~/.config
+# install go formatting packages for nvim
+go install mvdan.cc/gofumpt@latest
+go install -v github.com/incu6us/goimports-reviser/v3@latest
 
 # nano
 ln -s ~/.dotfiles/.nanorc ~/.nanorc
