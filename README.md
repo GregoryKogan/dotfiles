@@ -47,7 +47,10 @@ ln -s ~/.dotfiles/images ~/Pictures
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
 
 # nvim
-ln -s ~/.dotfiles/nvim ~/.config
+# install nvchad
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+# link custom configs
+ln -s ~/.dotfiles/nvim/custom ~/.config/nvim/lua
 # install go formatting packages for nvim
 go install mvdan.cc/gofumpt@latest
 go install -v github.com/incu6us/goimports-reviser/v3@latest
