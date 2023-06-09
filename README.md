@@ -38,50 +38,92 @@ sudo chmod +x ~/.dotfiles/arch_software/install_software_arch.sh
 ~/.dotfiles/arch_software/install_software_arch.sh
 ```
 
-### Create symlinks
+### Wire up configs
+- [images](#images)
+- [zsh](#zsh)
+- [nvim](#nvim)
+- [nano](#nano)
+- [git](#git)
+- [alacritty](#alacritty)
+- [starship](#starship)
+- [xournalpp](#xournalpp)
+- [skhd](#skhd)
+- [cups](#cups)
+- [picom](#picom)
+- [qtile](#qtile) 
+- [rofi](#rofi)
+- [telegram](#telegram)
+
+#### images
 ```shell
-# images
 ln -s ~/.dotfiles/images ~/Pictures
+```
 
-# zsh
+#### zsh
+```shell
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
+```
 
-# nvim
-# install nvchad
+#### nvim
+Install [NvChad](https://nvchad.com/)
+```shell
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
-# link custom configs
+```
+Link configs
+```shell
 ln -s ~/.dotfiles/nvim/custom ~/.config/nvim/lua
+```
 
-# nano
+#### nano
+```shell
 ln -s ~/.dotfiles/nano/.nanorc ~/.nanorc
+```
 
-# git
+#### git
+```shell
 ln -s ~/.dotfiles/git/.gitconfig ~/.gitconfig
+```
 
-# alacritty
+#### alacritty
+```shell
 ln -s ~/.dotfiles/alacritty ~/.config
+```
 
-# starship
+#### starship
+```shell
 ln -s ~/.dotfiles/starship/starship.toml ~/.config/starship.toml
+```
 
-# xournalpp
+#### xournalpp
+```shell
 ln -s ~/.dotfiles/xournalpp ~/.config
+```
 
-# skhd (for MacOS)
+#### skhd
+```shell
 ln -s ~/.dotfiles/skhd ~/.config
+```
 
-# cups (for MacOS)
+#### cups
+```shell
 ln -s ~/.dotfiles/cups/.cups ~/.config
+```
 
-# picom (for Linux)
+#### picom
+```shell
 ln -s ~/.dotfiles/picom ~/.config
+```
 
-# qtile (for Linux)
+#### qtile
+```shell
 ln -s ~/.dotfiles/qtile ~/.config
+```
 
-# rofi (for Linux)
+#### rofi
+```shell
 ln -s ~/.dotfiles/rofi ~/.config
 ```
 
-#### Exceptions
-- Telegram Dracula theme is inside `telegram` directory. How to apply it: https://draculatheme.com/telegram
+#### telegram 
+Telegram Dracula theme is inside `./telegram` directory. How to apply it: https://draculatheme.com/telegram
+
