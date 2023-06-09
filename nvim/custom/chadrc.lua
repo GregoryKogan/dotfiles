@@ -3,6 +3,10 @@ local M = {}
 
 M.ui = {
   theme = 'tokyonight',
+  theme_toggle = {
+    'tokyonight',
+    'palenight'
+  },
   changed_themes = {
     tokyonight = {
       base_30 = {
