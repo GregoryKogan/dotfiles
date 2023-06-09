@@ -12,7 +12,8 @@ M.ui = {
       base_30 = {
         black = "#24283b",
         darker_black = "#1f2336",
-        statusline_bg = "#1f2336"
+        statusline_bg = "#1f2336",
+        black2 = "#292e41",
       },
       base_16 = {
         base00 = "#24283b",
