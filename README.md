@@ -53,7 +53,7 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 ln -s ~/.dotfiles/nvim/custom ~/.config/nvim/lua
 
 # nano
-ln -s ~/.dotfiles/.nanorc ~/.nanorc
+ln -s ~/.dotfiles/nano/.nanorc ~/.nanorc
 
 # git
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig

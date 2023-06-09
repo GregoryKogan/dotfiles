@@ -10,4 +10,4 @@ set numbercolor grey
 set mouse
 set nohelp
 unset constantshow
-include /opt/homebrew/share/nano/*.nanorc
+include ~/.dotfiles/nano/syntax/*.nanorc
