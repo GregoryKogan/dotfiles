@@ -71,7 +71,7 @@ ln -s ~/.dotfiles/xournalpp ~/.config
 ln -s ~/.dotfiles/skhd ~/.config
 
 # cups (for MacOS)
-ln -s ~/.dotfiles/.cups ~/.config
+ln -s ~/.dotfiles/cups/.cups ~/.config
 
 # picom (for Linux)
 ln -s ~/.dotfiles/picom ~/.config
