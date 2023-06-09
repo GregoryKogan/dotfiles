@@ -20,6 +20,9 @@ M.ui = {
     CursorLine = {
       bg = "#292e41",
     },
+    ColorColumn = {
+      bg = "#292e41",
+    }
   },
 }
 M.plugins = "custom.plugins"
