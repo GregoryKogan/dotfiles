@@ -56,7 +56,7 @@ ln -s ~/.dotfiles/nvim/custom ~/.config/nvim/lua
 ln -s ~/.dotfiles/nano/.nanorc ~/.nanorc
 
 # git
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/git/.gitconfig ~/.gitconfig
 
 # alacritty
 ln -s ~/.dotfiles/alacritty ~/.config
