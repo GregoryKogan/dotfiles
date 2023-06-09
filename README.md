@@ -62,7 +62,7 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/alacritty ~/.config
 
 # starship
-ln -s ~/.dotfiles/starship.toml ~/.config/starship.toml
+ln -s ~/.dotfiles/starship/starship.toml ~/.config/starship.toml
 
 # xournalpp
 ln -s ~/.dotfiles/xournalpp ~/.config
