@@ -60,8 +60,27 @@ ln -s ~/.dotfiles/images ~/Pictures
 ```
 
 #### zsh
+Link config (requires subtle changes according to os)
 ```shell
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
+```
+Install dependencies (Linux)
+```shell
+# zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+# exa (Ubuntu)
+sudo apt install exa
+# exa (Arch)
+pacman -S exa
+```
+Install dependencies (MacOS)
+```shell
+# zsh-autosuggestions
+brew install zsh-autosuggestions
+# z
+brew install z
+# exa
+brew install exa
 ```
 
 #### nvim
