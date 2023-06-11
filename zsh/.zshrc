@@ -15,5 +15,5 @@ alias ls2='exa -TL=2 --icons'
 alias cd='z'
 
 clear
-~/.dotfiles/color-scripts/colorscript.sh --random
+~/.dotfiles/colorscripts/colorscript.sh --random
 echo 'Greetings master!'
