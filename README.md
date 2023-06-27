@@ -1,5 +1,5 @@
 # dotfiles
-My MacOS/ArchLinux configuration files
+My MacOS/Linux configuration files
 
 ![image](https://github.com/GregoryKogan/dotfiles/assets/60318411/70570850-a6e6-41bc-a77e-76a39c1dce3c)
 
@@ -71,7 +71,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 # exa (Ubuntu)
 sudo apt install exa
 # exa (Arch)
-pacman -S exa
+sudo pacman -S exa
+# exa (Fedora)
+sudo dnf install exa
 ```
 Install dependencies (MacOS)
 ```shell
@@ -81,6 +83,10 @@ brew install zsh-autosuggestions
 brew install z
 # exa
 brew install exa
+```
+Set zsh as default shell
+```shell
+chsh -s $(which zsh)
 ```
 
 #### nvim
