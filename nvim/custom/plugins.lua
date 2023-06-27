@@ -50,9 +50,6 @@ local plugins = {
 		},
 	},
 	{
-		"lazyvim.plugins.extras.formatting.prettier",
-	},
-	{
 		"neovim/nvim-lspconfig",
 
 		dependencies = {
