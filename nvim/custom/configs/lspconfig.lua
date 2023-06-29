@@ -20,3 +20,12 @@ lspconfig.gopls.setup({
 		},
 	},
 })
+
+lspconfig.volar.setup({
+	filetypes = { "vue", "json" },
+})
+
+lspconfig.tsserver.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
