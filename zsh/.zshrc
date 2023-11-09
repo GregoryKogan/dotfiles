@@ -5,6 +5,8 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 else
   source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+  source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  source ~/emsdk/emsdk_env.sh &> /dev/null
   alias cd='z'
 fi
 
