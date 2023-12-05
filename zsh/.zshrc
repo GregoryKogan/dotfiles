@@ -17,8 +17,8 @@ eval "$(zoxide init zsh)"
 export PATH="$HOME/go/bin:$PATH"
 
 alias vim='nvim'
-alias ls='exa -TL=1 --icons'
-alias ls2='exa -TL=2 --icons'
+alias ls='eza -TL=1 --icons'
+alias ls2='eza -TL=2 --icons'
 
 clear
 ~/.dotfiles/colorscripts/colorscript.sh --random
