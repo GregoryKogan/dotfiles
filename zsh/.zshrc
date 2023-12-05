@@ -6,7 +6,13 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 else
   source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
   source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  
   source ~/emsdk/emsdk_env.sh &> /dev/null
+  
+  source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+  source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+  chruby ruby-3.1.3 # run chruby to see actual version
+
   alias cd='z'
 fi
 
