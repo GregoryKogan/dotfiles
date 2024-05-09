@@ -162,7 +162,7 @@ passwd <username>
 pacman -S sudo vi
 visudo
 ```
-Uncomment `%wheel ALL(ALL:ALL) ALL` line
+Uncomment `%wheel ALL(ALL:ALL) ALL` line  
 Relogin as `<username>`
 
 ```shell
