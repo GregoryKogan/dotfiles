@@ -13,4 +13,6 @@ imports = [
   # Neovim
   "../modules/nvim/macos/install.toml",
   "../modules/nvim/config.toml",
+  # Fonts
+  "../modules/fonts/macos/install.toml",
 ]

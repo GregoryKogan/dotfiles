@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "Installing starship..."
+echo "Installing starship"
 brew install starship

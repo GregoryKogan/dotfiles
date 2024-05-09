@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ ! -f ~/.ssh/id_ed25519.pub ]; then
-    echo "~/.shh/id_ed25519.pub not found. Generating new ssh key..."
+    echo "~/.shh/id_ed25519.pub not found. Generating new ssh key"
     read -p "Enter email: " email
     ssh-keygen -t ed25519 -C "$email"
     eval "$(ssh-agent -s)"

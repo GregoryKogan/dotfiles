@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "Installing zoxide..."
+echo "Installing zoxide"
 brew install zoxide
 
-echo "Installing eza..."
+echo "Installing eza"
 brew install eza
 
-echo "Installing fastfetch..."
+echo "Installing fastfetch"
 brew install fastfetch
