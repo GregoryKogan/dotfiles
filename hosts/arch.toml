@@ -1,0 +1,4 @@
+imports = [
+  "../modules/alacritty/arch/install.toml",
+  "../modules/alacritty/config.toml",
+]

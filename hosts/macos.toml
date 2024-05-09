@@ -1,0 +1,4 @@
+imports = [
+  "../modules/alacritty/macos/install.toml",
+  "../modules/alacritty/config.toml",
+]
