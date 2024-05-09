@@ -8,3 +8,6 @@ if [ -d "$HOME/.oh-my-zsh" ]; then
 fi
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+cat ~/.zshrc.pre-oh-my-zsh >> ~/.zshrc
+rm ~/.zshrc.pre-oh-my-zsh
