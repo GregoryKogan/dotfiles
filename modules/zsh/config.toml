@@ -1,0 +1,4 @@
+files = [{ src = "zshrc", dest = ".zshrc" }]
+
+[scripts]
+build = ["install_oh-my-zsh.sh", "install_plugins.sh"]

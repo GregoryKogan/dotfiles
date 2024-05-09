@@ -1,0 +1,20 @@
+export PATH="$HOME/.bin:$PATH"
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+export ZSH="$HOME/.oh-my-zsh"
+
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zoxide)
+
+source $ZSH/oh-my-zsh.sh
+
+alias cd='z'
+alias vim='nvim'
+alias ls='eza -TL=1 --icons'
+alias ls2='eza -TL=2 --icons'
+
+clear
+fastfetch -c paleofetch.jsonc
+echo 'Greetings master!'

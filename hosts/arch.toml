@@ -4,4 +4,10 @@ imports = [
   "../modules/alacritty/config.toml",
   # Git & GitHub
   "../modules/git/config.toml",
+  # Starship
+  "../modules/starship/arch/install.toml",
+  "../modules/starship/config.toml",
+  # Zsh
+  "../modules/zsh/arch/install.toml",
+  "../modules/zsh/config.toml",
 ]
