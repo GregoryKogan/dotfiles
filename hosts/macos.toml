@@ -10,4 +10,7 @@ imports = [
   # Zsh
   "../modules/zsh/macos/install.toml",
   "../modules/zsh/config.toml",
+  # Neovim
+  "../modules/nvim/macos/install.toml",
+  "../modules/nvim/config.toml",
 ]
