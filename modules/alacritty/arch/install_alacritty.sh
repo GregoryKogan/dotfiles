@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo "Installing Alacritty"
-sudo pacman -S alacritty --noconfirm
+sudo pacman -S alacritty --needed --noconfirm

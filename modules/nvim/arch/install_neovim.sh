@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo "Installing neovim"
-sudo pacman -S neovim --noconfirm
+sudo pacman -S neovim --needed --noconfirm
