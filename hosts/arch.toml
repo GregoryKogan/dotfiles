@@ -14,5 +14,5 @@ imports = [
   "../modules/nvim/arch/install.toml",
   "../modules/nvim/config.toml",
   # Fonts
-  "../modules/fonts/macos/install.toml",
+  "../modules/fonts/arch/install.toml",
 ]
