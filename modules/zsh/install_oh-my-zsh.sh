@@ -7,7 +7,8 @@ if [ -d "$HOME/.oh-my-zsh" ]; then
   exit 0
 fi
 
+cp $HOME/.zshrc $HOME/.backup-zshrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-cat ~/.zshrc.pre-oh-my-zsh >> ~/.zshrc
-rm ~/.zshrc.pre-oh-my-zsh
+rm $HOME/.zshrc
+rm $HOME/.zshrc.pre-oh-my-zsh
+mv $HOME/.backup-zshrc $HOME/.zshrc
