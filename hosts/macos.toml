@@ -1,4 +1,7 @@
 imports = [
+  # Alacritty
   "../modules/alacritty/macos/install.toml",
   "../modules/alacritty/config.toml",
+  # Git & GitHub
+  "../modules/git/config.toml",
 ]
