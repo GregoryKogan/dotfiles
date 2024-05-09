@@ -152,3 +152,22 @@ ln -s ~/.dotfiles/rofi ~/.config
 #### telegram 
 Telegram Dracula theme is inside `./telegram` directory. How to apply it: https://draculatheme.com/telegram
 
+## Misc
+
+### ArchLinux-ARM installation
+
+```shell
+useradd -m -G wheel <username>
+passwd <username>
+pacman -S sudo vi
+visudo
+```
+Uncomment `%wheel ALL(ALL:ALL) ALL` line
+Relogin as `<username>`
+
+```shell
+sudo pacman -Syu
+sudo pacman -S gnome
+sudo systemctl enable gdm.service
+reboot
+```
