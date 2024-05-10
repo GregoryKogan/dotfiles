@@ -15,4 +15,6 @@ imports = [
   "../modules/nvim/config.toml",
   # Fonts
   "../modules/fonts/arch/install.toml",
+  # Hyprland
+  "../modules/hyprland/arch/install.toml",
 ]
