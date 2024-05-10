@@ -1,156 +1,46 @@
 # dotfiles
-My MacOS/Linux configuration files
 
-![image](https://github.com/GregoryKogan/dotfiles/assets/60318411/70570850-a6e6-41bc-a77e-76a39c1dce3c)
+My MacOS/ArchLinux configuration files
+
+This config uses **[Universal Home Builder](https://github.com/GregoryKogan/universal-home-builder)** to manage configs.  
+I wrote it myself and very proud of my creation! I would be very grateful if you check it out.
+
+## Install
+
+```shell
+git clone https://github.com/GregoryKogan/dotfiles.git ~/dotfiles
+```
 
 ## Usage
-### Clone inside '~/.dotfiles'
-via `HTTPS`:
+
+**1. Install [Universal Home Builder](https://github.com/GregoryKogan/universal-home-builder)**
+
 ```shell
-git clone https://github.com/GregoryKogan/dotfiles.git ~/.dotfiles
-```
-or via `SSH`:
-```shell
-git clone git@github.com:GregoryKogan/dotfiles.git ~/.dotfiles
+git clone https://github.com/GregoryKogan/universal-home-builder.git ~/uhb
 ```
 
-### Install software
-#### MacOS
-##### Install [Homebrew](https://brew.sh/) (for MacOS)
+**2. Build home directory with UHB**
+
+`<host>` is an entry point for UHB config. Available hosts:
+
+- `arch`
+- `macos`
+
 ```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-##### Install everything else via homebrew (for MacOS)
-```shell
-brew bundle --file ~/.dotfiles/macos_software/Brewfile
-```
-To overwrite list of software to install with your current homebrew installed programs run
-```shell
-rm ~/.dotfiles/macos_software/Brewfile; brew bundle dump --describe --file ~/.dotfiles/macos_software/Brewfile
-```
-#### Arch
-##### Give run permission to install script
-```shell
-sudo chmod +x ~/.dotfiles/arch_software/install_software_arch.sh
-```
-##### Run the script
-```shell
-~/.dotfiles/arch_software/install_software_arch.sh
+~/uhb/build ~/dotfiles/hosts/<host>
 ```
 
-### Wire up configs
-- [images](#images)
-- [zsh](#zsh)
-- [nvim](#nvim)
-- [nano](#nano)
-- [git](#git)
-- [alacritty](#alacritty)
-- [starship](#starship)
-- [xournalpp](#xournalpp)
-- [skhd](#skhd)
-- [cups](#cups)
-- [picom](#picom)
-- [qtile](#qtile) 
-- [rofi](#rofi)
-- [telegram](#telegram)
+This may require to input super user's password a few times.
+Also [oh-my-zsh](https://ohmyz.sh/) installation script puts you inside `zsh` shell and you should exit it with `Ctrl+D` for the script to continue it's work.
 
-#### images
-```shell
-ln -s ~/.dotfiles/images ~/Pictures
-```
+**3. Reboot**
 
-#### zsh
-Link config (requires subtle changes according to os)
-```shell
-ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
-```
-Install dependencies (Linux)
-```shell
-# zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-# exa (Ubuntu)
-sudo apt install exa
-# exa (Arch)
-sudo pacman -S exa
-# exa (Fedora)
-sudo dnf install exa
-```
-Install dependencies (MacOS)
-```shell
-# zsh-autosuggestions
-brew install zsh-autosuggestions
-# z
-brew install z
-# exa
-brew install exa
-```
-Set zsh as default shell
-```shell
-chsh -s $(which zsh)
-```
+Although most of the programs do not a reboot to work well with new configs, some things may break without it.  
+For example `$SHELL` environment variable will only be properly set after reboot.
 
-#### nvim
-Install [NvChad](https://nvchad.com/)
 ```shell
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+reboot
 ```
-Link configs
-```shell
-ln -s ~/.dotfiles/nvim/custom ~/.config/nvim/lua
-```
-
-#### nano
-```shell
-ln -s ~/.dotfiles/nano/.nanorc ~/.nanorc
-```
-
-#### git
-```shell
-ln -s ~/.dotfiles/git/.gitconfig ~/.gitconfig
-```
-
-#### alacritty
-```shell
-ln -s ~/.dotfiles/alacritty ~/.config
-```
-
-#### starship
-```shell
-ln -s ~/.dotfiles/starship/starship.toml ~/.config/starship.toml
-```
-
-#### xournalpp
-```shell
-ln -s ~/.dotfiles/xournalpp ~/.config
-```
-
-#### skhd
-```shell
-ln -s ~/.dotfiles/skhd ~/.config
-```
-
-#### cups
-```shell
-ln -s ~/.dotfiles/cups/.cups ~/.config
-```
-
-#### picom
-```shell
-ln -s ~/.dotfiles/picom ~/.config
-```
-
-#### qtile
-```shell
-ln -s ~/.dotfiles/qtile ~/.config
-```
-
-#### rofi
-```shell
-ln -s ~/.dotfiles/rofi ~/.config
-```
-
-#### telegram 
-Telegram Dracula theme is inside `./telegram` directory. How to apply it: https://draculatheme.com/telegram
 
 ## Misc
 
@@ -162,12 +52,13 @@ passwd <username>
 pacman -S sudo vi
 visudo
 ```
+
 Uncomment `%wheel ALL(ALL:ALL) ALL` line  
 Relogin as `<username>`
 
 ```shell
 sudo pacman -Syu
-sudo pacman -S gnome
+sudo pacman -S git python3 firefox gnome
 sudo systemctl enable gdm.service
 reboot
 ```
