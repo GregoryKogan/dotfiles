@@ -17,4 +17,5 @@ imports = [
   "../modules/fonts/arch/install.toml",
   # Hyprland
   "../modules/hyprland/arch/install.toml",
+  "../modules/hyprland/config.toml"
 ]

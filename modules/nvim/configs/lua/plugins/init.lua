@@ -35,7 +35,7 @@ return {
         "bash", "python", "c",
         "cpp", "cmake", "javascript",
         "typescript", "vue", "dockerfile",
-        "markdown"
+        "markdown", "hyprlang"
       },
     },
   },
