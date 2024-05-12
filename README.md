@@ -31,11 +31,10 @@ git clone https://github.com/GregoryKogan/universal-home-builder.git ~/uhb
 ```
 
 This may require to input super user's password a few times.
-Also [oh-my-zsh](https://ohmyz.sh/) installation script puts you inside `zsh` shell and you should exit it with `Ctrl+D` for the script to continue it's work.
 
 **3. Reboot**
 
-Although most of the programs do not a reboot to work well with new configs, some things may break without it.  
+Although most of the programs do not require a reboot to work well with new configs, some things may break without it.  
 For example `$SHELL` environment variable will only be properly set after reboot.
 
 ```shell
@@ -58,7 +57,9 @@ Relogin as `<username>`
 
 ```shell
 sudo pacman -Syu
-sudo pacman -S git python3 firefox gnome
-sudo systemctl enable gdm.service
+sudo pacman -S git python3
+git clone https://github.com/GregoryKogan/universal-home-builder.git ~/uhb
+git clone https://github.com/GregoryKogan/dotfiles.git
+~/uhb/build ~/dotfiles/hosts/arch
 reboot
 ```
