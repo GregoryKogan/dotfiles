@@ -10,7 +10,7 @@ thickness = 0.13
 
 [cursor.style]
 blinking = "Off"
-shape = "Beam"
+shape    = "Beam"
 
 [env]
 TERM = "alacritty"
@@ -29,24 +29,24 @@ family = "JetBrainsMono Nerd Font"
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
-style = "Regular"
+style  = "Regular"
 
 [mouse]
 hide_when_typing = false
 
 [scrolling]
-history = 10000
+history    = 10000
 multiplier = 3
 
 [window]
 dynamic_padding = false
-dynamic_title = false
-opacity = 1.0
-title = "Alacritty"
+dynamic_title   = false
+opacity         = 1.0
+title           = "Alacritty"
 
 [window.dimensions]
 columns = 150
-lines = 45
+lines   = 45
 
 [window.padding]
 x = 3
