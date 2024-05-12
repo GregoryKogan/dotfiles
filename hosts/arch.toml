@@ -4,6 +4,7 @@ imports = [
   "../modules/starship",
   "../modules/zsh",
   "../modules/nvim",
+  "../modules/nano",
   "../modules/fonts",
   # Arch specific
   "../modules/hyprland",
