@@ -8,6 +8,7 @@ imports = [
   "../modules/fonts",
   # Arch specific
   "../modules/hyprland",
+  "../modules/gnome",
 ]
 
 [host]

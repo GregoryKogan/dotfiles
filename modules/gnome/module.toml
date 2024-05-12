@@ -1,0 +1,6 @@
+[arch.scripts.install]
+text = "sudo pacman -S --noconfirm --needed gnome"
+
+[arch.scripts.activate-gdm]
+text  = "sudo systemctl enable gdm.service"
+stage = 1
