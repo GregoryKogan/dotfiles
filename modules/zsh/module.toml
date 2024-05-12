@@ -11,10 +11,10 @@ chsh -s $(which zsh)
 '''
 
 [arch.scripts.install-shell-programs]
-text = "sudo pacman -S zoxide eza fastfetch lolcat --needed --noconfirm"
+text = "sudo pacman -S zoxide eza lolcat --needed --noconfirm"
 
 [macos.scripts.install-shell-programs]
-text = "brew install zoxide eza fastfetch lolcat"
+text = "brew install zoxide eza lolcat"
 
 [scripts.download-colorscripts]
 text = '''

@@ -1,4 +1,5 @@
 imports = [
+  "../modules/software",
   "../modules/alacritty",
   "../modules/git",
   "../modules/starship",

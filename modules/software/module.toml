@@ -1,0 +1,9 @@
+[arch.scripts.install_software]
+text = '''
+sudo pacman -S --needed --noconfirm fastfetch firefox
+'''
+
+[macos.scripts.install_software]
+text = '''
+brew install fastfetch
+'''
