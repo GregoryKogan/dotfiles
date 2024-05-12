@@ -1,0 +1,9 @@
+[files.config]
+src  = "starship.toml"
+dest = ".config/starship.toml"
+
+[macos.scripts.install]
+text = "brew install starship"
+
+[arch.scripts.install]
+text = "sudo pacman -S starship --needed --noconfirm"

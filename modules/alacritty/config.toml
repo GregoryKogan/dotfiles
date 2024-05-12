@@ -1,4 +1,0 @@
-files = [{src = "alacritty.toml", dest = ".config/alacritty/alacritty.toml"}]
-
-[scripts]
-build = ["install_themes.sh"]

@@ -1,0 +1,16 @@
+[files.config]
+src  = "alacritty.toml"
+dest = ".config/alacritty/alacritty.toml"
+
+[scripts.install-themes]
+text = '''
+if [ ! -d ~/.config/alacritty/themes ]; then
+    git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+fi
+'''
+
+[macos.scripts.install]
+text = "brew install --cask alacritty"
+
+[arch.scripts.install]
+text = "sudo pacman -S alacritty --needed --noconfirm"

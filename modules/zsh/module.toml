@@ -1,0 +1,29 @@
+[files.zshrc]
+src       = "zshrc"
+dest      = ".zshrc"
+link-pre  = true
+link-post = true
+
+[macos]
+
+[macos.scripts.install-shell-programs]
+text = "brew install zoxide eza fastfetch"
+
+[arch]
+
+[arch.scripts.install]
+text = '''
+sudo pacman -S zsh --needed --noconfirm
+chsh -s $(which zsh)
+'''
+
+[arch.scripts.install-shell-programs]
+text = "sudo pacman -S zoxide eza fastfetch --needed --noconfirm"
+
+[scripts.install-oh-my-zsh]
+src   = "install_oh-my-zsh.sh"
+stage = 1
+
+[scripts.install-plugins]
+src   = "install_plugins.sh"
+stage = 2

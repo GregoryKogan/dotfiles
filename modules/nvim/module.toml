@@ -1,0 +1,9 @@
+[files.configs]
+src  = "configs"
+dest = ".config/nvim"
+
+[macos.scripts.install]
+text = "brew install neovim"
+
+[arch.scripts.install]
+text = "sudo pacman -S neovim ripgrep --needed --noconfirm"

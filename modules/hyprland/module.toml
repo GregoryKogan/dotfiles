@@ -1,0 +1,8 @@
+[arch.files.config]
+src  = "hyprland.conf"
+dest = ".config/hypr/hyprland.conf"
+
+[arch.scripts.install]
+text = '''
+sudo pacman -S hyprland kitty gtk3 --needed --noconfirm
+'''

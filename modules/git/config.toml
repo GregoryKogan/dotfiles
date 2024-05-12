@@ -1,4 +1,0 @@
-files = [{src = "gitconfig", dest = ".gitconfig"}]
-
-[scripts]
-user = ["github-ssh"]

@@ -1,21 +1,12 @@
 imports = [
-  # Alacritty
-  "../modules/alacritty/arch/install.toml",
-  "../modules/alacritty/config.toml",
-  # Git & GitHub
-  "../modules/git/config.toml",
-  # Starship
-  "../modules/starship/arch/install.toml",
-  "../modules/starship/config.toml",
-  # Zsh
-  "../modules/zsh/arch/install.toml",
-  "../modules/zsh/config.toml",
-  # Neovim
-  "../modules/nvim/arch/install.toml",
-  "../modules/nvim/config.toml",
-  # Fonts
-  "../modules/fonts/arch/install.toml",
-  # Hyprland
-  "../modules/hyprland/arch/install.toml",
-  "../modules/hyprland/config.toml"
+  "../modules/alacritty",
+  "../modules/git",
+  "../modules/starship",
+  "../modules/zsh",
+  "../modules/nvim",
+  "../modules/fonts",
+  "../modules/hyprland",
 ]
+
+[host]
+name = "arch"

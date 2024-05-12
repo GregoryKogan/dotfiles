@@ -1,0 +1,8 @@
+[files.config]
+src  = "gitconfig"
+dest = ".gitconfig"
+
+[scripts.github-ssh]
+src   = "github-ssh"
+build = false
+user  = true

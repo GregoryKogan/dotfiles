@@ -1,0 +1,8 @@
+[macos.scripts.install]
+text = '''
+brew tap homebrew/cask-fonts
+brew install font-jetbrains-mono-nerd-font
+'''
+
+[arch.scripts.install]
+text = "sudo pacman -S ttf-jetbrains-mono-nerd --needed --noconfirm"
