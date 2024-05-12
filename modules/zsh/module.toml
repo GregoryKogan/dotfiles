@@ -4,13 +4,6 @@ dest      = ".zshrc"
 link-pre  = true
 link-post = true
 
-[macos]
-
-[macos.scripts.install-shell-programs]
-text = "brew install zoxide eza fastfetch"
-
-[arch]
-
 [arch.scripts.install]
 text = '''
 sudo pacman -S zsh --needed --noconfirm
@@ -18,7 +11,39 @@ chsh -s $(which zsh)
 '''
 
 [arch.scripts.install-shell-programs]
-text = "sudo pacman -S zoxide eza fastfetch --needed --noconfirm"
+text = "sudo pacman -S zoxide eza fastfetch lolcat --needed --noconfirm"
+
+[macos.scripts.install-shell-programs]
+text = "brew install zoxide eza fastfetch lolcat"
+
+[scripts.download-colorscripts]
+text = '''
+if [ ! -d ~/.colorscripts ]; then
+  git clone https://github.com/charitarthchugh/shell-color-scripts.git ~/.colorscripts
+fi
+'''
+
+[scripts.remove-bad-colorscripts]
+text = '''
+rm -f ~/.colorscripts/colorscripts/blocks1
+rm -f ~/.colorscripts/colorscripts/debian
+rm -f ~/.colorscripts/colorscripts/hearts
+rm -f ~/.colorscripts/colorscripts/pacman
+rm -f ~/.colorscripts/colorscripts/panes
+rm -f ~/.colorscripts/colorscripts/popos
+rm -f ~/.colorscripts/colorscripts/rupees
+rm -f ~/.colorscripts/colorscripts/six
+rm -f ~/.colorscripts/colorscripts/space-invaders
+rm -f ~/.colorscripts/colorscripts/spectrum
+rm -f ~/.colorscripts/colorscripts/tvs
+rm -f ~/.colorscripts/colorscripts/ubuntu
+'''
+stage = 1
+
+[scripts.random-colorscript]
+src   = "colorscript.sh"
+build = false
+user  = true
 
 [scripts.install-oh-my-zsh]
 src   = "install_oh-my-zsh.sh"

@@ -16,5 +16,6 @@ alias ls='eza -TL=1 --icons'
 alias ls2='eza -TL=2 --icons'
 
 clear
-fastfetch -c paleofetch.jsonc
+# fastfetch -c paleofetch.jsonc
+colorscript.sh
 echo 'Greetings master!'
