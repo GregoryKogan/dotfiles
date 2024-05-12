@@ -1,9 +1,11 @@
 [arch.scripts.install_software]
 text = '''
-sudo pacman -S --needed --noconfirm fastfetch firefox
+sudo pacman -S --needed --noconfirm which fastfetch firefox
 '''
+stage = -1
 
 [macos.scripts.install_software]
 text = '''
 brew install fastfetch
 '''
+stage = -1
