@@ -1,0 +1,2 @@
+ctrl - t : open -na /Applications/Alacritty.app
+ctrl - b : open -na /Applications/Firefox.app

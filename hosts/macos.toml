@@ -5,6 +5,8 @@ imports = [
   "../modules/zsh",
   "../modules/nvim",
   "../modules/fonts",
+  # MacOS specific
+  "../modules/skhd",
 ]
 
 [host]

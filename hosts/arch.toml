@@ -5,6 +5,7 @@ imports = [
   "../modules/zsh",
   "../modules/nvim",
   "../modules/fonts",
+  # Arch specific
   "../modules/hyprland",
 ]
 

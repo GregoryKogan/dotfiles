@@ -1,0 +1,9 @@
+[macos.files.config]
+src  = "skhdrc"
+dest = ".skhdrc"
+
+[macos.scripts.install]
+text = '''
+brew install koekeishiya/formulae/skhd
+skhd --start-service
+'''
