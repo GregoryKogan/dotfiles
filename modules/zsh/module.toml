@@ -23,6 +23,10 @@ if [ ! -d ~/.colorscripts ]; then
 fi
 '''
 
+[scripts.remove-git-from-colorscripts]
+text  = "rm -rf ~/.colorscripts/.git"
+stage = 1
+
 [scripts.remove-bad-colorscripts]
 text = '''
 rm -f ~/.colorscripts/colorscripts/blocks1
@@ -48,6 +52,10 @@ user  = true
 [scripts.install-oh-my-zsh]
 src   = "install_oh-my-zsh.sh"
 stage = 1
+
+[scripts.remove-git-from-ph-my-zsh]
+text  = "rm -rf ~/.oh-my-zsh/.git"
+stage = 2
 
 [scripts.install-plugins]
 src   = "install_plugins.sh"
