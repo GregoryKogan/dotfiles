@@ -1,7 +1,7 @@
 [arch.scripts.install_software]
 text = '''
 sudo pacman -Syu --noconfirm
-sudo pacman -S --needed --noconfirm which fastfetch firefox
+sudo pacman -S --needed --noconfirm which gcc fastfetch firefox
 '''
 stage = -1
 
