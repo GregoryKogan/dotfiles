@@ -1,0 +1,9 @@
+[files.config]
+src   = "foot.ini"
+dest  = ".config/foot/foot.ini"
+hosts = ["arch-vm"]
+
+[scripts.install]
+text  = "sudo pacman -S foot --needed --noconfirm"
+hosts = ["arch-vm"]
+

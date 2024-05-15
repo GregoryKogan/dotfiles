@@ -10,6 +10,7 @@ imports = [
   # Arch specific
   "../modules/hyprland",
   "../modules/gnome",
+  "../modules/foot",
 ]
 
 [host]
