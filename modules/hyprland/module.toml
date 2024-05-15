@@ -5,6 +5,6 @@ hosts = ["arch-vm"]
 
 [scripts.install]
 text = '''
-sudo pacman -S hyprland kitty gtk3 --needed --noconfirm
+sudo pacman -S --needed --noconfirm hyprland dolphin wofi hyprpaper 
 '''
 hosts = ["arch-vm"]

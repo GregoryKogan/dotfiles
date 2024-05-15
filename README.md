@@ -1,6 +1,6 @@
 # dotfiles
 
-My MacOS/ArchLinux configuration files
+My ArchLinux/MacOS configuration files
 
 This config uses **[Universal Home Builder](https://github.com/GregoryKogan/universal-home-builder)** to manage configs.  
 I wrote it myself and very proud of my creation! I would be very grateful if you check it out.

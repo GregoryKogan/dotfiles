@@ -1,5 +1,5 @@
 [scripts.install]
-text  = "sudo pacman -S --noconfirm --needed gnome"
+text  = "echo '\ny\ny\ny' | sudo pacman -S gnome --needed"
 hosts = ["arch-vm"]
 
 [scripts.activate-gdm]

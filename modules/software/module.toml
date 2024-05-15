@@ -1,12 +1,14 @@
 [scripts.arch-install-software]
 text = '''
-sudo pacman -S --needed --noconfirm which fastfetch firefox
+sudo pacman -Syu --noconfirm
+sudo pacman -S --needed --noconfirm which gcc fastfetch firefox
 '''
 stage = -1
 hosts = ["arch-vm"]
 
 [scripts.macos-install-software]
 text = '''
+brew update && brew upgrade
 brew install fastfetch
 '''
 stage = -1

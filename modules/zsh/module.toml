@@ -7,8 +7,19 @@ link-post = true
 [scripts.arch-install]
 text = '''
 sudo pacman -S zsh --needed --noconfirm
-chsh -s $(which zsh)
 '''
+hosts = ["arch-vm"]
+
+[scripts.change-shell]
+text = '''
+case "$SHELL" in
+  */zsh) echo "Default shell is zsh"
+  ;;
+  *) chsh -s $(which zsh)
+  ;;
+esac
+'''
+stage = 1
 hosts = ["arch-vm"]
 
 [scripts.arch-install-shell-programs]
