@@ -1,6 +1,8 @@
-[arch.scripts.install]
-text = "sudo pacman -S --noconfirm --needed gnome"
+[scripts.install]
+text  = "sudo pacman -S --noconfirm --needed gnome"
+hosts = ["arch-vm"]
 
-[arch.scripts.activate-gdm]
+[scripts.activate-gdm]
 text  = "sudo systemctl enable gdm.service"
+hosts = ["arch-vm"]
 stage = 1

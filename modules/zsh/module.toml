@@ -4,17 +4,20 @@ dest      = ".zshrc"
 link-pre  = true
 link-post = true
 
-[arch.scripts.install]
+[scripts.arch-install]
 text = '''
 sudo pacman -S zsh --needed --noconfirm
 chsh -s $(which zsh)
 '''
+hosts = ["arch-vm"]
 
-[arch.scripts.install-shell-programs]
-text = "sudo pacman -S zoxide eza lolcat --needed --noconfirm"
+[scripts.arch-install-shell-programs]
+text  = "sudo pacman -S zoxide eza lolcat --needed --noconfirm"
+hosts = ["arch-vm"]
 
-[macos.scripts.install-shell-programs]
-text = "brew install zoxide eza lolcat"
+[scripts.macos-install-shell-programs]
+text  = "brew install zoxide eza lolcat"
+hosts = ["macos"]
 
 [scripts.download-colorscripts]
 text = '''

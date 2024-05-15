@@ -2,8 +2,10 @@
 src  = "configs"
 dest = ".config/nvim"
 
-[macos.scripts.install]
-text = "brew install neovim"
+[scripts.macos-install]
+text  = "brew install neovim"
+hosts = ["macos"]
 
-[arch.scripts.install]
-text = "sudo pacman -S neovim ripgrep --needed --noconfirm"
+[scripts.arch-install]
+text  = "sudo pacman -S neovim ripgrep --needed --noconfirm"
+hosts = ["arch-vm"]

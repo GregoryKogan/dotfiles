@@ -1,8 +1,10 @@
-[arch.files.config]
-src  = "hyprland.conf"
-dest = ".config/hypr/hyprland.conf"
+[files.config]
+src   = "hyprland.conf"
+dest  = ".config/hypr/hyprland.conf"
+hosts = ["arch-vm"]
 
-[arch.scripts.install]
+[scripts.install]
 text = '''
 sudo pacman -S hyprland kitty gtk3 --needed --noconfirm
 '''
+hosts = ["arch-vm"]

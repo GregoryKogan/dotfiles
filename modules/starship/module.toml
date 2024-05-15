@@ -2,8 +2,10 @@
 src  = "starship.toml"
 dest = ".config/starship.toml"
 
-[macos.scripts.install]
-text = "brew install starship"
+[scripts.macos-install]
+text  = "brew install starship"
+hosts = ["macos"]
 
-[arch.scripts.install]
-text = "sudo pacman -S starship --needed --noconfirm"
+[scripts.arch-install]
+text  = "sudo pacman -S starship --needed --noconfirm"
+hosts = ["arch-vm"]

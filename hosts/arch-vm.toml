@@ -13,4 +13,4 @@ imports = [
 ]
 
 [host]
-name = "arch"
+name = "arch-vm"

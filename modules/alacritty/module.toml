@@ -9,8 +9,10 @@ if [ ! -d ~/.config/alacritty/themes ]; then
 fi
 '''
 
-[macos.scripts.install]
-text = "brew install --cask alacritty"
+[scripts.macos-install]
+text  = "brew install --cask alacritty"
+hosts = ["macos"]
 
-[arch.scripts.install]
-text = "sudo pacman -S alacritty --needed --noconfirm"
+[scripts.arch-install]
+text  = "sudo pacman -S alacritty --needed --noconfirm"
+hosts = ["arch-vm"]
