@@ -7,8 +7,18 @@ link-post = true
 [arch.scripts.install]
 text = '''
 sudo pacman -S zsh --needed --noconfirm
-chsh -s $(which zsh)
 '''
+
+[arch.scripts.change-shell]
+text = '''
+case "$SHELL" in
+  */zsh) echo "Default shell is zsh"
+  ;;
+  *) chsh -s $(which zsh)
+  ;;
+esac
+'''
+stage = 1
 
 [arch.scripts.install-shell-programs]
 text = "sudo pacman -S zoxide eza lolcat --needed --noconfirm"
