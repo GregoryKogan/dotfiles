@@ -1,2 +1,4 @@
 ctrl - t : open -na /Applications/Alacritty.app
 ctrl - b : open -na /Applications/Firefox.app
+ctrl - m : open -na /Applications/Yandex Music.app
+ctrl - c : open -na /Applications/Telegram\ Desktop.app
